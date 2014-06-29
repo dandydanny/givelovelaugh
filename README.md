@@ -1,6 +1,8 @@
 Give Love Laugh
 ===============
 
+![alt text (Prototype Stage)](http://i29.photobucket.com/albums/c259/dandydanny/DEV/GiveLoveLaughscreenshot_zpsb8150757.png "Give Love Laugh Screeshot (Preliminary)")
+
 An web app to pool together small, monthly donations for a greater cause.
 
 Produced for the Startup Weekend CSULA, June 2014.
