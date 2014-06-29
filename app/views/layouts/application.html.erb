@@ -30,11 +30,26 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="charities">Charities</a></li>
           <li><a href="users">Users</a></li>
           <li><a href="about">About</a></li>
           <li><a href="contact">Contact</a></li>
+
+          <% if user_signed_in? %>
+<!--           <li><a href=""><strong><%= current_user.email %></a></strong>. -->
+          <li><%= link_to edit_user_registration_path do %>
+            <%= current_user.email %>
+            <% end %>
+          </li>
+          <li><%= link_to "Logout", destroy_user_session_path, method: :delete  %></li>
+          
+          <% else %>
+
+          <li><%= link_to "Sign up", new_user_registration_path %></li>
+          <li><%= link_to "Login", new_user_session_path %></li>
+          <% end %>
+
         </ul>
       </div>
     </div>
@@ -46,7 +61,14 @@
         <%= msg %>
       <% end %>
     <% end %>
-
+    <!-- Devise goodies -->
+<!--     <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %> -->
+    <!-- End Devise goodies -->
     <%= yield %>
   </div>
 </body>
