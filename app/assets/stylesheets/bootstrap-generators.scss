@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,900,900italic,300,300italic,700italic,700);
 
 body {
-  padding-top: $navbar-height;
+  padding-top: $navbar-height + 20px;
 }
 
 .page-header {
@@ -23,6 +23,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 div.jumbotron {
+
   min-height: 400px;
   background-image: url(../images/applause.jpg);
   background-size: cover;
@@ -32,4 +33,89 @@ div.jumbotron {
   margin-top: 100px;
   color: white;
   text-shadow: 0px 0px 15px #000;
+}
+
+.landing-icon {
+  font-size: +5em;
+  color: #428bca;
+}
+
+.navbar-brand {
+  font-size: +2em;
+  font-weight: 700;  
+}
+
+.navbar-inverse .navbar-nav > li > a{
+  font-size: +1.2em;
+}
+
+.twitter-color {
+  background-color: #1F97C7;
+  color: white;
+}
+
+.google-color {
+  background-color: #df4a32;
+  color: white;
+}
+
+.fa-in-button {
+  margin-right: 10px;
+}
+
+.button-signup {
+  width: 400px;
+  margin: .5em auto .5em auto;
+}
+
+.input-group {
+  margin: .5em auto .5em auto;
+}
+
+
+.charity-tile {
+  display: inline-block;
+  overflow: hidden;
+  background-color: #FEFEFE;
+  width: 250px;
+  height: 500px;
+  margin: 1em 1em 1em 0;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+h1 {
+  font-weight: 300;
+  color: dimgrays;
+
+}
+
+.charity-name {
+  font-weight: 700;
+  display: block;
+
+}
+
+.charity-description {
+  display: block;
+
+}
+
+.charity-content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.progress {
+  height: 10px;
+}
+
+
+.importance {
+  
+  border: 1px solid red;
+}
+
+.thankyou-star {
+  font-size: 3em;
 }

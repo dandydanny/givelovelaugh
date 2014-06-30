@@ -1,31 +1,316 @@
-<h1>Listing charities</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Url</th>
-      <th>Description</th>
-      <th>Vote</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <h1>Pick the causes you care about</h1>
 
-  <tbody>
-    <% @charities.each do |charity| %>
-      <tr>
-        <td><%= charity.name %></td>
-        <td><a href="<%= charity.url %>"><%= charity.url %></a></td>
-        <td><%= charity.description %></td>
-        <td><%= charity.vote %></td>
-        <td><%= link_to 'Show', charity %></td>
-        <td><%= link_to 'Edit', edit_charity_path(charity) %></td>
-        <td><%= link_to 'Destroy', charity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
+  <h3>Clean Water</h3>
 
-<%= link_to 'New Charity', new_charity_path %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="range">
+          <input type="range" name="range" min="1" max="100" value="50" onchange="range.value=value">
+          <output id="range" class="pull-right">50</output>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+
+
+  <div class="charity-tile">
+    <img src="../images/charity-water.png">
+    <div class="charity-content">
+      <h3 class="charity-name">Water for the People</h3>
+      <p class="charity-description">we want all people to have safe, continuous water, and when they do, our job will be done. We want water for everyone, forever.</p>
+      <p><a href="#">Website</a><p>
+      <p>Donor statistics:</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">40% Complete (success)</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tile -->
+
+  <div class="charity-tile">
+    <img src="../images/charity-water2.png">
+    <div class="charity-content">
+      <h3 class="charity-name">Charity: Water</h3>
+      <p class="charity-description">Our mission is to bring clean and safe drinking water to every person in the world.</p>
+      <p><a href="#">Website</a><p>
+      <p>Donor statistics:</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">60% Complete (success)</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tile -->
+
+
+   <h3>Human Trafficking / Slavery</h3>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="range">
+          <input type="range" name="range" min="1" max="100" value="50" onchange="range.value=value">
+          <output id="range" class="pull-right">50</output>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+
+
+  <div class="charity-tile">
+    <img src="../images/charity-human1.png">
+    <div class="charity-content">
+      <h3 class="charity-name">Free the Slaves</h3>
+      <p class="charity-description">we want all people to have safe, continuous water, and when they do, our job will be done. We want water for everyone, forever.</p>
+      <p><a href="#">Website</a><p>
+      <p>Donor statistics:</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">40% Complete (success)</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tile -->
+
+  <div class="charity-tile">
+    <img src="../images/charity-human2.png">
+    <div class="charity-content">
+      <h3 class="charity-name">Not for Sale</h3>
+      <p class="charity-description">Our mission is to bring clean and safe drinking water to every person in the world.</p>
+      <p><a href="#">Website</a><p>
+      <p>Donor statistics:</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">60% Complete (success)</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tile -->
+
+  <div class="charity-tile">
+    <img src="../images/charity-human3.png">
+    <div class="charity-content">
+      <h3 class="charity-name">End It Movement</h3>
+      <p class="charity-description">Our mission is to bring clean and safe drinking water to every person in the world.</p>
+      <p><a href="#">Website</a><p>
+      <p>Donor statistics:</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">60% Complete (success)</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tile -->
+
+   <h3>Animal Rescue</h3>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="range">
+          <input type="range" name="range" min="1" max="100" value="50" onchange="range.value=value">
+          <output id="range" class="pull-right">50</output>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+
+
+  <div class="charity-tile">
+    <img src="../images/charity-animal1.png">
+    <div class="charity-content">
+      <h3 class="charity-name">ASPCA</h3>
+      <p class="charity-description">we want all people to have safe, continuous water, and when they do, our job will be done. We want water for everyone, forever.</p>
+      <p><a href="#">Website</a><p>
+      <p>Donor statistics:</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">40% Complete (success)</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tile -->
+
+  <div class="charity-tile">
+    <img src="../images/charity-animal2.png">
+    <div class="charity-content">
+      <h3 class="charity-name">IAPF</h3>
+      <p class="charity-description">Our mission is to bring clean and safe drinking water to every person in the world.</p>
+      <p><a href="#">Website</a><p>
+      <p>Donor statistics:</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">60% Complete (success)</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tile -->
+
+    <div class="charity-tile">
+    <img src="../images/charity-animal3.png">
+    <div class="charity-content">
+      <h3 class="charity-name">Best Friends Society</h3>
+      <p class="charity-description">Our mission is to bring clean and safe drinking water to every person in the world.</p>
+      <p><a href="#">Website</a><p>
+      <p>Donor statistics:</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">60% Complete (success)</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tile -->
+
+   <h3>Emergency Relief</h3>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="range">
+          <input type="range" name="range" min="1" max="100" value="50" onchange="range.value=value">
+          <output id="range" class="pull-right">50</output>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+
+
+  <div class="charity-tile">
+    <img src="../images/charity-relief1.png">
+    <div class="charity-content">
+      <h3 class="charity-name">Redeeming Soles</h3>
+      <p class="charity-description">we want all people to have safe, continuous water, and when they do, our job will be done. We want water for everyone, forever.</p>
+      <p><a href="#">Website</a><p>
+      <p>Donor statistics:</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">40% Complete (success)</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tile -->
+
+  <div class="charity-tile">
+    <img src="../images/charity-relief2.png">
+    <div class="charity-content">
+      <h3 class="charity-name">DisasterOne</h3>
+      <p class="charity-description">Our mission is to bring clean and safe drinking water to every person in the world.</p>
+      <p><a href="#">Website</a><p>
+      <p>Donor statistics:</p>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">60% Complete (success)</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tile -->
+
+  <br>
+  <br>
+  <br>
+
+  <a href="#card" class="btn btn-primary btn-lg reveal-block" role="button"><i class="fa fa-arrow-right fa-in-button"></i> Payment Options</a>
+  
+
+<br><br><br><br><br>
+
+
+
+    
+
+<a name="card"></a>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="container">
+  <form class="form-horizontal" role="form">
+    <fieldset>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="card-holder-name">Name on Card</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="card-number">Card Number</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="expiry-month">Expiration Date</label>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-xs-3">
+              <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+                <option>Month</option>
+                <option value="01">Jan (01)</option>
+                <option value="02">Feb (02)</option>
+                <option value="03">Mar (03)</option>
+                <option value="04">Apr (04)</option>
+                <option value="05">May (05)</option>
+                <option value="06">June (06)</option>
+                <option value="07">July (07)</option>
+                <option value="08">Aug (08)</option>
+                <option value="09">Sep (09)</option>
+                <option value="10">Oct (10)</option>
+                <option value="11">Nov (11)</option>
+                <option value="12">Dec (12)</option>
+              </select>
+            </div>
+            <div class="col-xs-3">
+              <select class="form-control" name="expiry-year">
+                <option value="13">2013</option>
+                <option value="14">2014</option>
+                <option value="15">2015</option>
+                <option value="16">2016</option>
+                <option value="17">2017</option>
+                <option value="18">2018</option>
+                <option value="19">2019</option>
+                <option value="20">2020</option>
+                <option value="21">2021</option>
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="cvv">Card CVV</label>
+        <div class="col-sm-3">
+          <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+          <a href="#thankyou" class="btn btn-primary btn-lg reveal-block" role="button"><i class="fa fa-arrow-right fa-in-button"></i> Pay now</a>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<a name="thankyou"></a>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<h1 class="text-center"><i class="fa fa-star fa-spin"></i></h1>
+<h1 class="text-center">Thank You!</h1>
+<h3 class="text-center">With your help, this world will be a better place.</h3>
+<p class="text-center">We will send you an email of the transaction summary. <br>You may check back at any time to see your past charitable contributions.</p>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

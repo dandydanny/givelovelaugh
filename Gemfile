@@ -32,6 +32,10 @@ gem 'autoprefixer-rails'
 
 gem 'devise'
 
+gem 'pg'
+
+gem 'font-awesome-sass'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
